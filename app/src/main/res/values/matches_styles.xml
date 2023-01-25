@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Begin: Navigation Bottom Buttons -->
+    <style name="matches_nav_buttons">
+        <item name="android:background">@null</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="matches_nav_buttons_next" parent="matches_nav_buttons">
+        <item name="android:src">@drawable/right_arrow</item>
+    </style>
+    <style name="matches_nav_buttons_prev" parent="matches_nav_buttons_next">
+        <item name="android:rotation">180</item>
+    </style>
+    <style name="matches_nav_buttons_bookmark" parent="matches_nav_buttons">
+        <item name="android:src">@drawable/bookmark</item>
+    </style>
+    <style name="matches_nav_buttons_chat" parent="matches_nav_buttons">
+        <item name="android:src">@drawable/chat</item>
+    </style>
+    <style name="matches_nav_buttons_profile" parent="matches_nav_buttons">
+        <item name="android:src">@drawable/profile</item>
+    </style>
+    <!-- End: Navigation Bottom Buttons -->
+
+    <style name="mathces_index">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:background">@drawable/matches_drawable_index</item>
+        <item name="android:textColor">#FEFEFE</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:minWidth">95dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+</resources>

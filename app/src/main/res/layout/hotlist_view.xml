@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ff000000"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.10"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/hotlist_view"
+                android:clipToPadding="false"
+                android:numColumns="2"
+                android:paddingTop="48dp"
+                android:paddingBottom="49dp"/>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:alpha="0.6"
+                    android:background="#ff000000">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/hotlist_cancel"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="3dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_action_cancel"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/hotlist_title"
+                            android:textColor="#ffffffff"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/hotlist_anchor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+                            android:scaleType="center"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/hotlist_add_action"
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="bottom">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:alpha="0.6"
+                    android:background="#ff000000"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/hotlist_add"
+                        android:textColor="#ffffffff"
+                        android:editable="false"
+                        android:singleLine="false"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_action_accept"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        style="@style/SKProgressBarLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/hotlist_progress_bar"
+        android:layout_gravity="center"
+        android:indeterminate="false"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/hotlist_no_item"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hotlist_no_item_icon"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_hot"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/matches_white_text_color"
+                android:text="@string/hotlist_no_items"
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

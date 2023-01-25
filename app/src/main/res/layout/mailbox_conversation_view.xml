@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#ffffffff"
+    android:gravity="center"
+    android:id="@+id/mailbox_chat_root">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminateOnly="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mailbox_compose_send_indicator"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-7dp"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+            android:id="@+id/mailbox_chat_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        android:visibility="gone">
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/mailbox_history_list"
+                android:divider="@null"
+                android:transcriptMode="alwaysScroll"
+                android:layout_above="@+id/mailbox_message_content"
+                android:stackFromBottom="true"
+                android:smoothScrollbar="true"
+                android:paddingBottom="3dp"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/mailbox_history_list_date"
+                    android:padding="3dp"
+                    android:textColor="@color/matches_remark" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.2dp"
+                    android:visibility="visible"
+                    android:background="@android:color/darker_gray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mailbox_message_content"
+                android:layout_alignParentBottom="true"
+                >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2dp"
+                        android:visibility="visible"
+                        android:background="@android:color/darker_gray"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mailbox_send_message"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:src="@drawable/ic_sendphoto"
+                        android:layout_alignWithParentIfMissing="false"
+                        android:layout_alignParentBottom="false"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignTop="@+id/mailbox_message_text"
+                        android:paddingTop="10dp"
+                        android:paddingRight="13dp"
+                        />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mailbox_message_text"
+                        android:inputType="textMultiLine"
+                        android:layout_alignWithParentIfMissing="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignParentBottom="false"
+                        android:layout_toLeftOf="@+id/mailbox_send_message"
+                        android:paddingLeft="13dp"
+                        android:paddingRight="13dp"
+                        android:scrollbars="vertical"
+                        android:minHeight="50dp"
+                        android:maxLines="3"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/mailbox_authorize"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/mailbox_authorize_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mailbox_authorize_icon"
+                android:src="@drawable/cantview" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/mailbox_authorize_message"
+                android:textColor="@color/matches_remark"
+                android:paddingTop="30dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/mailbox_chat_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

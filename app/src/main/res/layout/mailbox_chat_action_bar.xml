@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/mailbox_chat_ab_terminate"
+        android:layout_weight="0.1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:id="@+id/mailbox_chat_ab_back_icon"
+            android:background="@null"
+            android:scaleType="fitCenter"/>
+
+        <view
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            class="com.golfingbuddy.utils.SKRoundedImageView"
+            android:id="@+id/mailbox_chat_ab_avatar"
+            android:src="@drawable/rounded_rectangle_2_copy_2"
+            android:layout_margin="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/mailbox_chat_ab_display_name"
+            android:singleLine="true"
+            android:paddingLeft="3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|right"
+        android:layout_weight="0.9">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/mailbox_chat_ab_menu"
+            android:src="@drawable/more"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

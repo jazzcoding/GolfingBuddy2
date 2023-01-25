@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"/>
+
+    <FrameLayout
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/permissions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lock_disable"/>
+        <TextView
+            android:id="@+id/permissions_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#999"
+            android:text="@string/search_result_no_permissions"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lock_enable"/>
+        <TextView
+            android:id="@+id/subscribe_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#999"
+            android:text="@string/search_result_no_permissions"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+    </LinearLayout>
+</LinearLayout>

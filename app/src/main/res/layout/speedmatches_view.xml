@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.golfingbuddy.ui.matches.fragments.SlideViewFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/speedmatches_view_no_items"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="138dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/speedmatches_no_item"
+                android:paddingBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/speedmatches_no_items"
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:textColor="@color/matches_remark" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/speedmatches_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="@dimen/speedmatches_collapse_small_side"
+                android:id="@+id/speedmatches_pager_side">
+
+                <com.golfingbuddy.ui.speedmatch.classes.SpeedmatchesViewPager
+                    android:id="@+id/speedmatches_pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal|top" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal|bottom"
+                style="@style/speedmatches_info_panel"
+                android:id="@+id/speedmatches_info_side"
+                android:layout_weight="@dimen/speedmatches_collapse_big_side"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/speedmatches_divider"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    style="@style/speedmatches_info_panel_line"
+                    android:layout_gravity="center_horizontal|top"></LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="6dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:longClickable="true"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical|left">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/speedmatches_online_status"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/group_3"
+                        android:layout_marginRight="5dp"
+                        android:visibility="visible"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/speedmatches_displayname_and_ages_and_location"
+                        android:textSize="15.25sp"
+                        android:textColor="#ff000000"
+                        style="@style/speedmatches_info_text"
+                        android:paddingRight="2dp"
+                        android:singleLine="false"
+                        android:text="ger g erg e" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="0.1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+
+                        <ListView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/speedmatches_info_list"
+                            android:clickable="false"
+                            android:drawSelectorOnTop="false"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ffffffff"
+                        android:paddingBottom="10dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/speedmatches_like"
+                                android:baselineAlignBottom="true"
+                                style="@style/speedmatches_buttons_like" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/speedmatches_info"
+                                android:layout_gravity="center_vertical"
+                                style="@style/speedmatches_buttons_info" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/speedmatches_skip"
+                                android:layout_gravity="center_vertical"
+                                style="@style/speedmatches_buttons_skip" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/speedmatches_compatibility"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/mathces_index"
+            android:id="@+id/speedmatches_index"
+            android:layout_height="44dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="67dp"
+            android:layout_gravity="center_horizontal|top"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/speedmatch_authorize"
+        android:focusableInTouchMode="false"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/speedmatch_icon"
+                android:src="@drawable/cantview" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/speedmatch_text"
+                android:textColor="@color/matches_remark"
+                android:paddingTop="30dp"
+                android:text="@string/speedmatches_permissions"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/speedmatches_progress_bar"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+</FrameLayout>

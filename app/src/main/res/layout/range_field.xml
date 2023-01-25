@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:id="@+id/range_container"
+    android:clickable="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/range"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="-15dp">
+
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" android:text="@string/range_field_from_label"
+            android:id="@+id/fromText"
+            android:layout_gravity="center|left"
+            android:layout_marginRight="10dp" />
+
+        <NumberPicker android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:inputType="number" android:ems="10" android:id="@+id/from"
+            android:layout_gravity="center_horizontal|top" />
+
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" android:text="@string/range_field_to_label"
+            android:id="@+id/toText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center" />
+
+        <NumberPicker android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:inputType="number" android:ems="10" android:id="@+id/to"
+            android:layout_gravity="left|top"
+            android:baselineAligned="false" />
+
+    </LinearLayout>
+</LinearLayout>

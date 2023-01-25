@@ -1,0 +1,151 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fbconnect_first_step"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible"
+        android:background="#ffffffff">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#fff7f7f7">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.70">
+
+                <com.facebook.login.widget.ProfilePictureView
+                    android:id="@+id/fbconnect_avatar"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:id="@+id/fbconnect_display_name"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/fbconnect_first_step_content"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="49dp"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fbconnect_goto_step_two"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/fbconnect_gradient"
+                android:gravity="center"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/fbconnect_first_step_btn_label"
+                    android:textColor="@color/matches_white_text_color" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/right_arrow" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fbconnect_progressBar"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/fbconnect_second_step"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal" >
+
+            <LinearLayout
+                android:id="@+id/fbconnect_second_step_content"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="49dp" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fbconnect_done"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/fbconnect_gradient"
+                android:gravity="center"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/fbconnect_second_step_btn_label"
+                    android:id="@+id/textView6"
+                    android:textColor="@color/matches_white_text_color"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:id="@+id/imageView4"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/com_facebook_button_like_icon_selected" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

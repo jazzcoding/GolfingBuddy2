@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="13dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <view
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    class="com.golfingbuddy.utils.SKRoundedImageView"
+                    android:id="@+id/mailbox_conversation_avatar"
+                    android:src="@drawable/rounded_rectangle_2_copy_2"
+                    android:scaleType="centerInside" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/mailbox_conversation_online"
+                    android:background="@drawable/mailbox_online"
+                    android:layout_alignBottom="@+id/mailbox_conversation_avatar"
+                    android:layout_alignRight="@+id/mailbox_conversation_avatar"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mailbox_conversation_mark"
+                    android:src="@drawable/mark_menu_item"
+                    android:layout_alignTop="@+id/mailbox_conversation_avatar"
+                    android:layout_alignLeft="@+id/mailbox_conversation_avatar"
+                    android:layout_alignBottom="@+id/mailbox_conversation_avatar"
+                    android:layout_alignRight="@+id/mailbox_conversation_avatar"
+                    android:scaleType="center"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1"
+                android:id="@+id/mailbox_conversation_info"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="8dp"
+                    android:layout_weight="0.20">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/mailbox_info">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/mailbox_old_subject"
+                            android:text="Small Text"
+                            android:id="@+id/mailbox_conversation_displayname"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:enabled="false"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/mailbox_new_subject"
+                            android:id="@+id/mailbox_conversation_subject"
+                            android:singleLine="true"
+                            android:text="middle"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/mailbox_conversation_has_attach"
+                            android:src="@drawable/ic_attach"
+                            android:layout_marginRight="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/mailbox_old"
+                            android:text="Small Text"
+                            android:id="@+id/mailbox_conversation_preview"
+                            android:singleLine="true"
+                            android:textIsSelectable="false"
+                            android:clickable="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.80">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/mailbox_conversation_new_indicator"
+                            android:layout_gravity="bottom|right"
+                            android:src="@drawable/ic_mail_new"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="10:09"
+                            android:id="@+id/mailbox_conversation_date"
+                            android:layout_gravity="right|top"
+                            android:textColor="@color/matches_remark"
+                            android:textSize="14sp"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:id="@+id/mailbox_conversation_action_panel"
+                android:layout_weight="0.9">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#ffe3e1e1">
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mailbox_conversation_action"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_more"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

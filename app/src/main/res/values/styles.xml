@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="SkTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_example</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Example</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Example</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Example</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Example</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Transparent.Example</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_example</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_example</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Example</item>
+        <item name="android:homeAsUpIndicator">@drawable/back</item>
+    </style>
+
+    <style name="SkThemeNoActionBar" parent="SkTheme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTitleSize">0dp</item>
+    </style>
+
+    <style name="SKProgressBarLarge" parent="android:Widget.Holo.ProgressBar.Large">
+    </style>
+
+    <style name="SKProgressBarSmall" parent="android:Widget.Holo.ProgressBar.Small">
+    </style>
+
+    <style name="PasswordMessage" parent="android:Widget.Holo.ProgressBar.Small">
+    </style>
+
+    <color name="question_error_message_color">#f10b0b</color>
+
+    <!-- User List -->
+    <style name="user_list_item_layout" >
+        <item name="android:background">#f8f9f8</item>
+    </style>
+    <!-- User List -->
+
+
+
+    <style name="PhotoViewTheme" parent="android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/PhotoViewThemeMyActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="PhotoViewThemeMyActionBar" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@null</item>
+    </style>
+
+
+
+    <style name="ActionBar.Solid.Example" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_example</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_example</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_example</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Example</item>
+        <item name="android:icon">@android:color/transparent</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Example" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_example</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Example</item>
+        <item name="android:icon">@android:color/transparent</item>
+    </style>
+
+    <style name="PopupMenu.Example" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_example</item>
+    </style>
+
+    <style name="DropDownListView.Example" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_example</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Example" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_example</item>
+    </style>
+
+    <style name="DropDownNav.Example" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_example</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_example</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_example</item>
+    </style>
+
+    <style name="ProgressBar.Example" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_example</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Example" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_example</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Example.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Example</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Example</item>
+    </style>
+
+    <!-- Mailbox -->
+    <style name="mailbox_info">
+        <item name="android:minHeight">25dp</item>
+    </style>
+
+    <style name="mailbox_text">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="mailbox_new" parent="mailbox_text">
+        <item name="android:textColor">@color/matches_black_text_color</item>
+    </style>
+    <style name="mailbox_new_subject" parent="mailbox_new">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mailbox_old" parent="mailbox_text">
+        <item name="android:textColor">@color/matches_remark</item>
+    </style>
+    <style name="mailbox_old_subject" parent="mailbox_old">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="mailbox_compose_input">
+        <item name="android:layout_height">45dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+    <!-- End -->
+
+    <style tools:ignore="NewApi" name="CustomTheme" parent="android:Theme.DeviceDefault">
+        <item name="cropImageStyle">@style/Widget.CropImageView</item>
+    </style>
+
+    <style name="Widget.CropImageView" parent="android:Widget">
+        <item name="showThirds">true</item>
+        <item name="showCircle">false</item>
+        <item name="showHandles">always</item>
+        <item name="highlightColor">#f3f3f3</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:background">@drawable/oxwall_ic_fb</item>
+    </style>
+
+</resources>

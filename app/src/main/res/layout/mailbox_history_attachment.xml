@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/mailbox_history_message_root">
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mailbox_history_message_content"
+                android:background="@drawable/mailbox_message_single"
+                android:padding="10dp">
+
+                <view
+                    android:layout_width="127dp"
+                    android:layout_height="127dp"
+                    class="com.golfingbuddy.utils.SKImageView"
+                    android:id="@+id/mailbox_history_attachment_image"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_file"/>
+
+            </LinearLayout>
+            </LinearLayout>
+    </FrameLayout>
+</merge>

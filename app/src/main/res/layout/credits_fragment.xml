@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        style="@style/SKProgressBarLarge"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/credits_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#87868E"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" />
+
+    <View
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/credits_label_divider_border"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cost_of_action"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:divider="@drawable/list_divider"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/credit_packs_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#87868E"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/credit_packs"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp" />
+
+    <View
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/credits_label_divider_border"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/credit_packs"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+</LinearLayout>

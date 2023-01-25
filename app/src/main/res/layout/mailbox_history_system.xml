@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/mailbox_history_system"
+            android:layout_gravity="center_horizontal"
+            android:padding="3dp"
+            android:textColor="@color/matches_remark"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mailbox_history_wink_content"
+            android:background="@drawable/mailbox_message_single"
+            android:layout_gravity="left"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/mailbox_history_authorize_icon"
+                    android:src="@drawable/ic_wink_new"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/mailbox_history_authorize_message"
+                    android:paddingBottom="6dp"
+                    android:paddingRight="13dp"
+                    android:text="@string/mailbox_conversation_list_wink_back"
+                    android:paddingTop="6dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/mailbox_history_authorize_action"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@android:color/darker_gray"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_more"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.golfingbuddy"
+    android:versionCode="8"
+    android:versionName="2.2">
+
+    <application
+        android:name="com.golfingbuddy.core.SkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic"
+        android:label="@string/app_name"
+        android:theme="@style/SkTheme" >
+        <activity
+            android:name="com.golfingbuddy.ui.profile.AlbumListViewActivity"
+            android:exported="true"
+            android:label="@string/album_view_activity_title">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.profile.PhotoListManageActivity"
+            android:exported="true"
+            android:label="@string/album_view_activity_title">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.profile.AlbumPhotoListViewActivity"
+            android:exported="true"
+            android:label="@string/album_view_activity_title">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.base.MainFragmentActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.golfingbuddy.core.SkCommandExecutorService"
+            android:exported="false" >
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.golfingbuddy.core.sqlite.SQLiteContentProvider"
+            android:authorities="com.golfingbuddy"
+            android:exported="false"
+            android:syncable="true" />
+        <activity
+            android:name="com.golfingbuddy.ui.memberships.SubscribeOrBuyActivity"
+            android:exported="true"
+            android:label="@string/subscribe_or_buy_title">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.memberships.MembershipAndCreditsActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="com.golfingbuddy.ui.memberships.CreditsActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="com.golfingbuddy.ui.memberships.MembershipsActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="com.golfingbuddy.ui.profile.SubscribePhotoAdd"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="com.golfingbuddy.ui.profile.ProfileViewActivity"
+            android:exported="true"
+            android:label="@string/profile_view_activity_title">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.profile.PhotoViewActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main_fragment" >
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.search.FilterActivity"
+            android:exported="true"
+            android:label="@string/search_result_filter_activity_title" >
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.search.EditProfileActivity"
+            android:exported="true"
+            android:label="@string/edit_profile_form_title" >
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.memberships.MembershipDetailsActivity"
+            android:exported="true"
+            android:label="@string/membership_details_activity_label" >
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.memberships.CreditActionsActivity"
+            android:exported="true"
+            android:label="@string/credits_cost_of_actions_title" >
+        </activity>
+
+        <activity
+            android:name="com.golfingbuddy.ui.speedmatch.SpeedmatchesFilterActivity"
+            android:label="@string/speedmatches_filter_bar_title">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.auth.AuthActivity"
+            android:exported="true"
+            android:theme="@style/SkThemeNoActionBar">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.auth.UrlActivity"
+            android:exported="true"
+            android:theme="@style/SkThemeNoActionBar">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.base.StatusActivity"
+            android:exported="true"
+            android:label="@string/suspended_activity_title" >
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.fbconnect.FacebookLoginStepManager"
+            android:label="@string/fbconnect_first_step_title">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.join.view.JoinForm"
+            android:label="@string/join_form_title">
+
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.mailbox.mail.MailActivity">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.mailbox.compose.ComposeActivity">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.mailbox.reply.ReplyActivity">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.mailbox.attachment_viewer.AttachmentViewerActivity">
+            android:exported="true"
+        </activity>
+        <activity
+            android:theme="@style/SkThemeNoActionBar"
+            android:name="com.golfingbuddy.ui.hot_list.HotListView">
+        </activity>
+        <!--activity
+            android:name="com.skadatex.ui.speedmatch.SpeedmatchesFilterActivity"
+            android:label="@string/title_activity_speedmatches_filter" >
+        </activity
+        -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:theme="@style/SkThemeNoActionBar" />
+        <activity
+            android:name="com.golfingbuddy.ui.fbconnect.TermsOfUseActivity"
+            android:exported="true"
+            android:label="@string/sidebar_label_terms" />
+        <activity 
+            android:theme="@style/CustomTheme" 
+            android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity
+            android:name="com.golfingbuddy.ui.mailbox.chat.ChatActivity">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.mailbox.chat.WinkActivity" android:noHistory="true">
+        </activity>
+        <activity
+            android:name="com.golfingbuddy.ui.base.email_verification.EmailVerification">
+        </activity>
+
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+    </application>
+
+    <uses-sdk android:minSdkVersion="16"
+        android:targetSdkVersion="22"
+    />
+    <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+     To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-feature android:name="android.hardware.location.gps" />
+</manifest>

@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.golfingbuddy.ui.profile.ProfileViewActivity" >
+    <item android:id="@+id/mailbox_attachment_menu_save"
+        android:title="@string/mailbox_attachment_viewer_save"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

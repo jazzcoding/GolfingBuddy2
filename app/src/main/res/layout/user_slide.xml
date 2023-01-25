@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.golfingbuddy.ui.matches.fragments.SlideViewFragment">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible"
+        android:id="@+id/matches_view">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/slide_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center_vertical">
+
+        </FrameLayout>
+
+        <TextView
+            android:text="0"
+            android:id="@+id/slide_index"
+            style="@style/mathces_index"
+            android:layout_height="44dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="67dp"
+            android:visibility="visible" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:shrinkColumns="*"
+            android:stretchColumns="1"
+            android:visibility="visible">
+
+            <TableRow
+                android:id="@+id/tableRow"
+                android:background="@drawable/grad1">
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/matches_prev"
+                    style="@style/matches_nav_buttons_prev" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/matches_next"
+                    style="@style/matches_nav_buttons_next" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/matches_bookmark"
+                    style="@style/matches_nav_buttons_bookmark"
+                    android:visibility="visible"/>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/matches_chat"
+                    style="@style/matches_nav_buttons_chat" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/matches_profile"
+                    style="@style/matches_nav_buttons_profile" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="340.50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Display name and Ages"
+                android:id="@+id/slide_displayname_age"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:maxWidth="320dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Role"
+                android:id="@+id/slide_role"
+                android:singleLine="true"
+                android:background="@drawable/matches_drawable_role"
+                android:layout_marginLeft="5dp"
+                android:textSize="10.5sp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compatibility"
+            android:id="@+id/slide_compatibility"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="393dp"
+            android:textSize="19sp"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Location"
+            android:id="@+id/slide_location"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="365dp"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:longClickable="false"
+            android:maxWidth="350dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/user_slide_no_items"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="138dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/speedmatches_no_item"
+                android:paddingBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/speedmatches_no_items"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:textColor="@color/matches_remark" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        style="@style/SKProgressBarLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/matches_progress_bar"
+        android:layout_gravity="center" />
+
+
+</FrameLayout>

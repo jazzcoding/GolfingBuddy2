@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="password_label" type="id">7845182345</item>
+    <item name="repeat_password_label" type="id">7845182346</item>
+    <item name="edittext_container" type="id">112312</item>
+    <item name="password_error" type="id">1235601233</item>
+    <item name="ads_profile_view" type="id" />
+    <item name="ads_main_fragment_view" type="id" />
+    <item name="ads_edit_profile_view" type="id" />
+    <item name="ads_album_list_view" type="id" />
+    <item name="ads_compose_view" type="id" />
+    <item name="ads_mail_view" type="id" />
+    <item name="ads_reply_view" type="id" />
+    <item name="ads_chat_view" type="id" />
+    <item name="ads_album_photo_list_view" type="id" />
+    <item name="ads_membership_view" type="id" />
+    <item name="ads_membership_details_view" type="id" />
+    <item name="ads_credit_actions_view" type="id" />
+    <item name="ads_photo_view" type="id" />
+</resources>

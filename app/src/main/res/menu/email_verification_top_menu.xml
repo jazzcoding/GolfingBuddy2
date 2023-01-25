@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.golfingbuddy.ui.profile.ProfileViewActivity" >
+    <item android:id="@+id/action_log_out"
+        android:title="@string/sidebar_label_logout"
+        android:orderInCategory="100" />
+</menu>

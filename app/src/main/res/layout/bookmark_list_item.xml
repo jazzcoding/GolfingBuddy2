@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/user_list_item_border">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.golfingbuddy.utils.SKImageView
+            android:layout_width="@dimen/userlist_avatar_size"
+            android:layout_height="@dimen/userlist_avatar_size"
+            android:id="@+id/avatar"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/avatarProgressBar"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/userlist_avatar_membersip_text_size"
+            android:text="M"
+            android:id="@+id/role"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/user_list_membersip_icon_rectangle"
+            android:ellipsize="marquee"
+            android:layout_margin="@dimen/userlist_avatar_membersip_icon_margin"
+            android:maxWidth="@dimen/userlist_avatar_size"
+            android:padding="@dimen/userlist_avatar_membersip_icon_padding"
+
+            android:textColor="#fff" />
+
+        <ImageView
+            android:layout_width="@dimen/userlist_bookmark_icon_width"
+            android:layout_height="@dimen/userlist_bookmark_icon_height"
+            android:id="@+id/bookmark"
+            android:layout_gravity="right|top"
+            android:src="@drawable/ic_bookmark"
+            android:layout_marginRight="2dp" />
+
+    </FrameLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Realname"
+            android:textSize="@dimen/userlist_display_name_text_size"
+            android:id="@+id/display_name"
+            android:textStyle="bold"
+            android:layout_gravity="left|top"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="@dimen/userlist_user_data_margin_left"
+            android:textColor="#555555"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/userlist_last_activity_text_size"
+            android:text="activity"
+            android:id="@+id/last_activity"
+            android:layout_gravity="bottom|left"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/userlist_user_data_margin_left"
+            android:layout_marginBottom="@dimen/userlist_last_activity_margin_bottom"
+            android:minHeight="@dimen/userlist_last_activity_min_height"
+            android:textColor="#a6a7a6"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="@dimen/userlist_online_icon_size"
+            android:layout_height="@dimen/userlist_online_icon_size"
+            android:id="@+id/online_status_icon"
+            android:layout_gravity="center|right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/group_3"
+            android:layout_marginRight="@dimen/userlist_online_icon_margin_right" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+

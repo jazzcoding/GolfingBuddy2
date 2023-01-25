@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="speedmatches_info_panel">
+        <item name="android:background">#ffffff</item>
+    </style>
+    <style name="speedmatches_info_panel_line">
+        <item name="android:background">#fb7565</item>
+    </style>
+    <style name="speedmatches_info_text">
+        <item name="android:textSize">15.25sp</item>
+    </style>
+
+    <style name="speedmatches_buttons">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="speedmatches_buttons_like" parent="speedmatches_buttons">
+        <item name="android:src">@drawable/speedmatches_like</item>
+    </style>
+    <style name="speedmatches_buttons_info" parent="speedmatches_buttons">
+        <item name="android:src">@drawable/speedmatches_info</item>
+    </style>
+    <style name="speedmatches_buttons_skip" parent="speedmatches_buttons">
+        <item name="android:src">@drawable/speedmatches_unlike</item>
+    </style>
+
+</resources>

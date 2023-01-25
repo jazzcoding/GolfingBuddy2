@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- User Lists -->
+    <dimen name="userlist_avatar_size">60dp</dimen>
+    <dimen name="userlist_avatar_membersip_text_size">6sp</dimen>
+    <dimen name="userlist_avatar_membersip_icon_height">6dp</dimen>
+    <dimen name="userlist_avatar_membersip_icon_margin">1.2dp</dimen>
+    <dimen name="userlist_avatar_membersip_icon_padding">1.2dp</dimen>
+
+    <dimen name="userlist_bookmark_icon_height">9dp</dimen>
+    <dimen name="userlist_bookmark_icon_width">9.6dp</dimen>
+
+    <dimen name="userlist_online_icon_size">9dp</dimen>
+    <dimen name="userlist_online_icon_margin_right">9dp</dimen>
+
+    <dimen name="userlist_user_data_margin_left">10dp</dimen>
+
+    <dimen name="userlist_display_name_text_size">16sp</dimen>
+    <dimen name="userlist_display_name_margin_top">6dp</dimen>
+
+    <dimen name="userlist_last_activity_text_size">12sp</dimen>
+    <dimen name="userlist_last_activity_margin_bottom">6dp</dimen>
+    <dimen name="userlist_last_activity_min_height">12dp</dimen>
+
+    <!-- User Lists -->
+</resources>

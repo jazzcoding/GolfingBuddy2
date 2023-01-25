@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="speedmatches_change_mode_duration">200</integer>
+    <item name="speedmatches_expand_small_side" format="float" type="dimen">0.82</item>
+    <item name="speedmatches_expand_big_side" format="float" type="dimen">0.18</item>
+    <item name="speedmatches_collapse_small_side" format="float" type="dimen">0.35</item>
+    <item name="speedmatches_collapse_big_side" format="float" type="dimen">0.65</item>
+</resources>

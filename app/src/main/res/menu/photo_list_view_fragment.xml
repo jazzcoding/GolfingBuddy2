@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/add_btn"
+        android:icon="@drawable/plus"
+        android:showAsAction="ifRoom"
+        android:title="@string/base_add_label" />
+
+    <item android:id="@+id/del_btn"
+        android:icon="@drawable/delete"
+        android:showAsAction="ifRoom"
+        android:title="@string/base_delete_label" />
+
+</menu>

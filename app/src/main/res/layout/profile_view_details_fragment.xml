@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="visible"
+    android:id="@+id/scrollView">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/compat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@id/avatar"
+                android:layout_marginBottom="40dp" />
+
+            <RelativeLayout
+                android:id="@+id/profile_pending_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentBottom="false"
+                android:visibility="gone"
+                android:layout_alignTop="@+id/avatar"
+                android:layout_alignBottom="@+id/avatar"
+                android:layout_alignLeft="@+id/avatar"
+                android:layout_alignRight="@+id/avatar">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#c8c8c8"
+                    android:alpha="0.7"></LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pending" />
+
+                        <TextView
+                            android:alpha="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="@string/profile_avatar_pending"
+                            android:textColor="@color/matches_white_text_color"
+                            android:shadowRadius="10"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowColor="#ff000000" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#C4C4C4"
+            android:background="@drawable/qst_avatar_details_border_top"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+            <ImageView
+                android:id="@+id/onlineStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/group_3"
+                android:layout_alignTop="@id/details"
+                android:layout_alignLeft="@id/details"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="12dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+     </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SKProgressBarLarge"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/search_result_menu"
+        android:icon="@drawable/menu_icon"
+        android:title="@string/search_result_filter_menu_label"
+        android:showAsAction="always" >
+        <menu>
+            <item android:id="@+id/search_result_filter"
+                android:title="@string/search_result_filter_menu_label"/>
+        </menu>
+    </item>
+</menu>
+

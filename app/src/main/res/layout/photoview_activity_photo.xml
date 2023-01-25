@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/imgDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/photo_view_pending"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="false"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/imgDisplay"
+        android:layout_alignBottom="@+id/imgDisplay"
+        android:layout_alignLeft="@+id/imgDisplay"
+        android:layout_alignRight="@+id/imgDisplay"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitCenter">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.7">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pending" />
+
+                <TextView
+                    android:alpha="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/profile_photo_pending"
+                    android:textColor="@color/matches_white_text_color"
+                    android:shadowRadius="10"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowColor="#ff000000"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

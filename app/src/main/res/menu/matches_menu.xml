@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/matches_menu"
+        android:icon="@drawable/matches_menu"
+        android:title="@string/speedmatches_filter_age"
+        android:showAsAction="always" />
+</menu>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_popup_window_label_color">#FF000000</color>
+
+    <color name="matches_divider_color">#fb7565</color>
+    <color name="matches_black_text_color">#FF000000</color>
+    <color name="matches_white_text_color">#FEFEFE</color>
+    <color name="matches_remark">#ff6d6d6d</color>
+
+    <color name="tab_divider_border">#fb7565</color>
+    <color name="user_list_background_color">#f1f1f1</color>
+    <color name="credits_label_divider_border">#AFAFAF</color>
+    <color name="credits_divider_border">#ebebeb</color>
+    <color name="memberships_and_credits_learn_more_color">#F96454</color>
+
+    <!-- Mailbox -->
+    <color name="mailbox_message_background">#f0f0f0</color>
+    <color name="mailbox_author_background">#fa7564</color>
+    <!-- End -->
+</resources>

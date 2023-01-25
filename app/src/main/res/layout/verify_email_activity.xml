@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="49dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resetEmail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_alignParentBottom="false"
+        android:textAlignment="center"
+        android:layout_below="@+id/questions">
+        <TextView
+            android:id="@+id/resetEmailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/reset_email_verify_text"
+            android:textColor="#FB7A6B"
+            android:textSize="20sp"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/resetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/reset_email_verify_resend"
+            android:textColor="#FB7A6B"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/done_button"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/join_next_button_gradient"
+        android:gravity="center"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/join_form_join_button_label"
+            android:textColor="@color/matches_white_text_color" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitEnd"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+</RelativeLayout>

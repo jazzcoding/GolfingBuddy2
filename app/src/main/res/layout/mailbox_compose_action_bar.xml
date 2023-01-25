@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/mailbox_compose_ab_terminate"
+        android:layout_weight="0.2"
+        android:clickable="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:background="@null"
+            android:id="@+id/mailbox_compose_ab_back_icon"
+            android:scaleType="fitCenter"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/mailbox_compose_ab_caption"
+            android:text="@string/mailbox_compose_title"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|right"
+        android:layout_weight="0.8">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/mailbox_compose_ab_attachment"
+            android:src="@drawable/ic_attache"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/mailbox_compose_ab_send"
+            android:src="@drawable/ic_send"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp" />
+    </LinearLayout>
+</LinearLayout>
